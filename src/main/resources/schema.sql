@@ -1,0 +1,9 @@
+DROP TABLE IF EXISTS Transactions;
+create table Transactions
+(
+    ID BIGINT auto_increment,
+    CUSTOMER_ID INTEGER NOT NULL,
+    LOAD_AMOUNT DECIMAL NOT NULL,
+    TIME TIMESTAMP,
+    ACCEPTED BOOLEAN NOT NULL
+);
